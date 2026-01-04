@@ -1,0 +1,51 @@
+/* --- CUSTOM CSS --- */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    font-family: system-ui, -apple-system, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#canvas-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+canvas {
+    display: block;
+    cursor: crosshair;
+}
+
+/* Glassmorphism UI Panels */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Fish Button Styles */
+.fish-btn {
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+.fish-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.fish-btn:active {
+    transform: scale(0.95);
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
